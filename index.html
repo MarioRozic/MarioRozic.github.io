@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        .completed { text-decoration: line-through; }
+    </style>
 </head>
 <body>
     <div id="app">
-        <form>
-            <span class="error" v-show="!message">
-                You must enter a message
-            </span><br>
-
-            <textarea v-model="message" name="" id="" cols="30" rows="10"></textarea><br>
-
-            <button type="submit" v-show="message">
-                Send Message
-            </button>
-        </form>
+        <tasks :list="tasks"></tasks>       
     </div>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script>
-        new Vue({
-            el: '#app',
-            data: {
-                message: ''
-            }
-        })
 
-    </script>
+    <template id="tasks-template">
+        <div>
+            
+            <h1>
+                My Tasks 
+                <span v-show="remaining">({{ remaining }})</span>
+            </h1>
+            <ul>
+                <li :class="{ 'completed' : task.completed }" 
+                    v-for="task in list"
+                    @click="task.completed = !task.completed"
+                >
+                    {{ task.body }}
+                    <strong @click="deleteTask(task)">x</strong>
+                </li>
+            </ul>
+        </div>
+    </template>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="src/main9.js"></script>
 </body>
 </html>
