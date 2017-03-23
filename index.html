@@ -1,197 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vue.js Order Form</title>
-
-    <style>
-    @import url(https://fonts.googleapis.com/css?family=Cookie);
-
-    /* Hide un-compiled mustache bindings
-    until the Vue instance is ready */
-
-    [v-cloak] {
-      display: none;
-    }
-
-    *{
-    	margin:0;
-    	padding:0;
-    }
-
-    body{
-    	font:15px/1.3 'Open Sans', sans-serif;
-    	color: #5e5b64;
-    	text-align:center;
-    }
-
-    a, a:visited {
-    	outline:none;
-    	color:#389dc1;
-    }
-
-    a:hover{
-    	text-decoration:none;
-    }
-
-    section, footer, header, aside, nav{
-    	display: block;
-    }
-
-    /*-------------------------
-    	The order form
-    --------------------------*/
-
-    form{
-    	background-color: #61a1bc;
-    	border-radius: 2px;
-    	box-shadow: 0 1px 1px #ccc;
-    	width: 400px;
-    	padding: 35px 60px;
-    	margin: 50px auto;
-    }
-
-    form h1{
-    	color:#fff;
-    	font-size:64px;
-    	font-family:'Cookie', cursive;
-    	font-weight: normal;
-    	line-height:1;
-    	text-shadow:0 3px 0 rgba(0,0,0,0.1);
-    }
-
-    form ul{
-    	list-style:none;
-    	color:#fff;
-    	font-size:20px;
-    	font-weight:bold;
-    	text-align: left;
-    	margin:20px 0 15px;
-    }
-
-    form ul li{
-    	padding:20px 30px;
-    	background-color:#e35885;
-    	margin-bottom:8px;
-    	box-shadow:0 1px 1px rgba(0,0,0,0.1);
-    	cursor:pointer;
-    }
-
-    form ul li span{
-    	float:right;
-    }
-
-    form ul li.active{
-    	background-color:#8ec16d;
-    }
-
-    div.total{
-    	border-top:1px solid rgba(255,255,255,0.5);
-    	padding:15px 30px;
-    	font-size:20px;
-    	font-weight:bold;
-    	text-align: left;
-    	color:#fff;
-    }
-
-    div.total span{
-    	float:right;
-    }
-    </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fullpage</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="jquery.fullPage.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- v-cloak hides any un-compiled data bindings until the Vue instance is ready. -->
+<div id="wrapper">
+    <div class="section">
+        <div class="head">
+            <!--<img src="https://scontent.fbeg1-1.fna.fbcdn.net/v/t1.0-9/11006450_966198793397886_5016609415602649159_n.jpg?oh=c11fb02497822a9372f140ce5ef7dbf1&oe=5960070A" alt="">-->
+            <div id="title">
+                <h1>Mario Rozic</h1>
+                <h3>~ Web Developer ~</h3>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+            <div class="about">
+                <h3 class="myTitle">WHO AM I?</h3>
+                <div class="myRed"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p class="aboutText">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        
+                        </div>
+                                            <div class="col-lg-6">
+                            <p class="aboutText">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+    </div>
+    <div class="section">
+        <div class="skills">
+            <h3 class="myTitle">SKILLS</h3>
+            <div class="myRed"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3"></div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-4 col-md-3">
+                            <ul>
+                                <li><div class="circle"></div><span>C++</span></li>
+                                <li><div class="circle"></div><span>GO</span></li>
+                                <li><div class="circle"></div><span>PHP</span></li>
+                                <li><div class="circle"></div><span>NodeJS</span></li>
+                                <li><div class="circle"></div><span>C++</span></li>
+                                <li><div class="circle"></div><span>GO</span></li>
+                                <li><div class="circle"></div><span>PHP</span></li>
+                                <li><div class="circle"></div><span>NodeJS</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-3">
+                            <ul>
+                                <li><div class="circle"></div><span>C++</span></li>
+                                <li><div class="circle"></div><span>GO</span></li>
+                                <li><div class="circle"></div><span>PHP</span></li>
+                                <li><div class="circle"></div><span>NodeJS</span></li>
+                                <li><div class="circle"></div><span>C++</span></li>
+                                <li><div class="circle"></div><span>GO</span></li>
+                                <li><div class="circle"></div><span>PHP</span></li>
+                                <li><div class="circle"></div><span>NodeJS</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-3">
+                            <ul>
+                                <li><div class="circle"></div><span>C++</span></li>
+                                <li><div class="circle"></div><span>GO</span></li>
+                                <li><div class="circle"></div><span>PHP</span></li>
+                                <li><div class="circle"></div><span>NodeJS</span></li>
+                                <li><div class="circle"></div><span>C++</span></li>
+                                <li><div class="circle"></div><span>GO</span></li>
+                                <li><div class="circle"></div><span>PHP</span></li>
+                                <li><div class="circle"></div><span>NodeJS</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="projects">
+            <h3 class="myTitle">PROJECTS</h3>
+            <div class="myRed"></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="contact">
+            <h3 class="myTitle">CONTACT</h3>
+            <div class="myRed"></div>
+        </div>
+    </div>
+</div>
 
-<form id="main" v-cloak>
-
-	<h1>Services</h1>
-
-	<ul>
-
-		<!-- Loop through the services array, assign a click handler, and set or
-			 remove the "active" css class if needed -->
-
-		<li v-for="service in services" v-on:click="toggleActive(service)" v-bind:class="{ 'active': service.active}">
-
-			<!-- Display the name and price for every entry in the array .
-                 Vue.js has a built in currency filter for formatting the price -->
-
-			{{service.name}} <span>{{service.price | currency}}</span>
-
-		</li>
-	</ul>
-
-	<div class="total">
-
-		<!-- Calculate the total price of all chosen services. Format it as currency. -->
-
-		Total: <span>{{total() | currency}}</span>
-        
-	</div>
-
-</form>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
-<script>
-
-// Define a custom filter called "currency". 
-Vue.filter('currency', function (value) {
-    return '$' + value.toFixed(2);
-});
-
-var demo = new Vue({
-    el: '#main',
-    data: {
-    	// Define the model properties. The view will loop
-        // through the services array and genreate a li
-        // element for every one of its items.
-        services: [
-        	{
-        		name: 'Web Development',
-        		price: 300,
-        		active:true
-        	},{
-        		name: 'Design',
-        		price: 400,
-        		active:false
-        	},{
-        		name: 'Integration',
-        		price: 250,
-        		active:false
-        	},{
-        		name: 'Training',
-        		price: 220,
-        		active:false
-        	},{
-        		name: 'Mara',
-        		price: 440,
-        		active:false
-        	}
-        ]
-    },
-    methods: {
-    	toggleActive: function(s){
-            s.active = !s.active;
-    	},
-    	total: function(){
-
-        	var total = 0;
-
-        	this.services.forEach(function(s){
-        		if (s.active){
-        			total+= s.price;
-        		}
-        	});
-
-    	   return total;
-        }
-    }
-});
-	
-</script>
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <script src="jquery.fullPage.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function() {
+          $('#wrapper').fullpage();
+      });
+  </script>
+    
 </body>
 </html>
