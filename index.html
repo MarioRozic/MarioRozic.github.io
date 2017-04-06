@@ -175,28 +175,31 @@
                 <div class="row contactForm">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control myForm" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control myForm" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control myForm"  placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control myForm" rows="5" id="comment" placeholder="Message"></textarea>
-                        </div>
-                        <div id="formButton">
 
-                            <button class="btn btn-defalt myButton">SEND</button>
-                        </div>
+                        <form action="https://formspree.io/rozic.mario@hotmail.com" method="POST">
+                            <div class="row">
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control myForm" placeholder="Name" name="name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control myForm" placeholder="Email" name="_replyto">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control myForm"  placeholder="Subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control myForm" rows="5" id="comment" placeholder="Message" name="message"></textarea>
+                            </div>
+                            <div id="formButton">
+                                <input type="submit" value="SEND" class="btn btn-defalt myButton">
+                            </div>
+                        </form>
                         
 
 
@@ -218,7 +221,7 @@
                     <a href="https://github.com/MarioRozic" class="col-lg-3 col-md-6 col-sm-12  btn-github">
                         <i class="fa fa-github"></i>
                     </a>
-                    <a href="http://stackoverflow.com/users/5243162/mario-rozic?tab=profile" class="col-lg-3 col-md-6 col-sm-12  btn-google">
+                    <a href="https://stackoverflow.com/users/5243162/mario-rozic?tab=profile" class="col-lg-3 col-md-6 col-sm-12  btn-google">
                         <i class="fa fa-google"></i>
                     </a>
                     <a href="https://www.instagram.com/_mariorozic_/" class="col-lg-3 col-md-6 col-sm-12  btn-instagram">
