@@ -1,288 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mario Rozic | portfolio</title>
+    <title>Mario Rozic portfolio</title>
     <link rel="shortcut icon" type="image/png" href="http://dotageeks.com/wp-content/uploads/2015/10/Super-Mario-Pixel-03.png"
     />
-    <!--<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-social.css">
-    <!--<link rel="stylesheet" href="css/font-awesome.css">-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <embed src="http://www.youtube.com/v/DZu9JsorGjQ&autoplay=1" type="application/x-shockwave-flash" wmode="transparent" width="1"
+        height="1"></embed>
+    <style type="text/css">
+        body {
+            /* background-image: url('https://images.alphacoders.com/475/475526.jpg'); */
+            background: black;
+            background-repeat: repeat;
+            background-position: center;
+            background-attachment: fixed;
+            /* padding-left: 200px;
+            padding-right: 200px; */
+        }
 
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/style.css">
+        #nothing {
+            FONT-FAMILY: 'Courier';
+            margin-top: -20px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+    </style>
+
 </head>
 
-<body>
-    <ul id="menu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Welcome</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
-        <li data-menuanchor="3rdPage"><a href="#3rdPage">Skills</a></li>
-        <li data-menuanchor="4thPage"><a href="#4thPage">Projects</a></li>
-        <li data-menuanchor="5thPage"><a href="#5thPage">Contact</a></li>
-        <li data-menuanchor="6thPage"><a href="#6thPage">Social</a></li>
-    </ul>
-    <div id="wrapper">
-        <div class="section" data-anchor="firstPage">
-            <div class="head">
-                <div id="title">
-                    <h1>Mario Rozic</h1>
-                    <!--<h3>~ Web Developer ~</h3>-->
-                    <h3>~ Web Developer ~</h3>
-                </div>
-            </div>
-        </div>
-        <div class="section" data-anchor="secondPage">
-            <div class="about">
-                <h3 class="myTitle">WHO AM I?</h3>
-                <div class="myRed"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <p class="aboutText">
-                                My name is Mario Rozić. I'm a 21-year old web developer from Mostar, Bosnia and Herzegovina and I am very active in the web
-                                development. I don't only design the web sites, I make them work with JavaScript frontend
-                                and backend stuff. My expertise and interest lies in JavaScript technologies, including HTML5,
-                                CSS, JavaScript (Node.js, Vue.js, Express.js, Electron.js, Angular.js), but mostly my skills
-                                are based on server side skills with Node and PHP. Sometimes I enjoy playing with desktop/mobile
-                                development using JavaScript.</p>
-                        </div>
-                        <div class="col-lg-6">
-                            <p class="aboutText">
-                                I focus on open source technologies and MEAN Stack. My philosophy on learning to use web technologies is always the same:
-                                experiment, fail, fix, fail again, fix again. Reading books will only get you so far -- you
-                                should spend time with your debugger, experimenting away with whichever technology you need
-                                to learn. When not buried in my text editor, I enjoy watching movies, reading programming
-                                books and playing basketball.</p>
+<body onload=writetext()>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <DIV id=nothing> </DIV>
+
+    <SCRIPT language=JavaScript>
+        let log = console.log;
+        let speed = 15;
+        let msg = new Array(); //strings written in screen
+        msg[0] = "<h2><font face='Courier' color='#00FF00' new size='4'><center><br>Mario Rozic</center></font></h2>";
+        msg[1] = "<font face='Courier' color='#00FF00' new size='3'><center>#Software Developer</center><br><br></font> </b>";
+        msg[2] = "<font face='Courier' color='#00FF00' new size='3'><center>Message: </center><br><br></font> </b>";
 
 
-        </div>
-        <div class="section" data-anchor="3rdPage">
-            <div class="skills">
-                <h3 class="myTitle">SKILLS</h3>
-                <div class="myRed"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3"></div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="col-lg-4 col-md-3">
-                                <ul>
-                                    <li>
-                                        <div class="circle"></div><span>JavaScript</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>NodeJS</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Express.js</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Koa.js</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>MongoDB</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Firebase</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>MySQL</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Bash</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 col-md-3">
-                                <ul>
-                                    <li>
-                                        <div class="circle"></div><span>HTML5</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>CSS</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>jQuery</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Vue.js</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Angular.js</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Socket.io</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Websockets</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Electron.js</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 col-md-3">
-                                <ul>
-                                    <li>
-                                        <div class="circle"></div><span>Git/GitHub</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>npm</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Docker</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Postman</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>PHP</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>C++</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>GO</span></li>
-                                    <li>
-                                        <div class="circle"></div><span>Virtualization</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" data-anchor="4thPage">
-            <div class="projects">
-                <h3 class="myTitle">PROJECTS</h3>
-                <div class="myRed"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 portfolio-item">
-                            <a href="https://github.com/MarioRozic/CubeHunt">
-                                <!-- <img class="img-responsive" src="http://image.prntscr.com/image/cf4947db7b074a3989ed4597c12e93ab.png" alt=""> -->
-                                <img class="img-responsive" src="img/cube.webp" alt="">
+        msg[3] =
+            `<font face='Courier' color='#00FFFF'>
+            <left>My name is Mario Rozić. I'm a 22-year old web developer from Mostar, Bosnia and Herzegovina. <font face='Courier' color='#00FFFF'>I'm a dedicated hard working team player with experience and excellent knowledge on cutting edge up-to-date web development technologies React JS, React Native, Node JS, Express JS, Mongo DB, MySQL seeking a web developer role in your company. I am willing to utilize my 2+ years of experience as MERN Stack web developer and excellent creative skills for your company achieve its goals.
+        </font><br><br>
+        <font face='Courier' color='#FFFFFF' new size='4'>Proffesional Summary:</font><br>
 
-                            </a>
-                            <h2 class="projectTitle">
-                                <a href="https://github.com/MarioRozic/CubeHunt">Cube Hunt</a>
-                            </h2>
-                            <p>Basic game made with JavaScript(canvas), and NodeJS with Socket.io for backend. The only puprpose
-                                of this game is to practice my backend skills and it was pretty fun working on this project.
-                            </p>
-                            <h5 class="pull-right">
-                                <a href="https://github.com/MarioRozic/CubeHunt" style="text-decoration: none;">Show more</a>
-
-                            </h5>
-                        </div>
-                        <div class="col-md-4 portfolio-item">
-                            <a href="https://github.com/MarioRozic/Node-examples">
-                                <!-- <img class="img-responsive" style="padding:40px 0;" src="http://image.prntscr.com/image/d6bfa6c7ff484f21a17771bfebb01c7e.png" alt=""> -->
-                                <img class="img-responsive" style="padding:40px 0;" src="img/node.webp" alt="">
-
-                            </a>
-                            <h2 class="projectTitle">
-                                <a href="https://github.com/MarioRozic/Node-examples">NodeJS examples</a>
-                            </h2>
-                            <p>Yet another project, something like showcase of my Node stuff thad I've learned in past few months.
-                                Feel free to check it out and play with it, there is some pretty cool stuff. </p>
-                            <h5 class="pull-right">
-                                <a href="https://github.com/MarioRozic/Node-examples" style="text-decoration: none;">Show more</a>
-                            </h5>
-                        </div>
-                        <div class="col-md-4 portfolio-item">
-                            <a href="https://github.com/MarioRozic/YoutubePlayer">
-                                <!-- <img class="img-responsive" style="padding:0 50px;" src="http://image.prntscr.com/image/96519c37a2454162a6fd80700b735b22.png" alt=""> -->
-                                <img class="img-responsive" style="padding:0 50px;" src="img/player.webp" alt="">
-
-                            </a>
-                            <h2 class="projectTitle">
-                                <a href="https://github.com/MarioRozic/YoutubePlayer">Web Player</a>
-                            </h2>
-                            <p>Here I am trying to recreate some desktop music player, it allows you to download songs you like
-                                and make playlists with them. This project is still in development, I dont have time now
-                                for this but if you like to try it be my guest. Hope i will finish it soon and right now
-                                its only available on windows.
-                            </p>
-                            <h5 class="pull-right">
-                                <a href="https://github.com/MarioRozic/YoutubePlayer" style="text-decoration: none;">Show more</a>
-                            </h5>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section" data-anchor="5thPage">
-            <div class="contact">
-                <h3 class="myTitle">CONTACT</h3>
-                <div class="myRed"></div>
-                <div class="container">
-                    <div class="row contactForm">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-8">
-
-                            <form action="https://formspree.io/rozic.mario@hotmail.com" method="POST">
-                                <div class="row">
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control myForm" placeholder="Name" name="name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control myForm" placeholder="Email" name="_replyto" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control myForm" placeholder="Subject" name="subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control myForm" rows="5" id="comment" placeholder="Message" name="message"></textarea>
-                                </div>
-                                <div id="formButton">
-                                    <input type="submit" value="SEND" class="btn btn-defalt myButton">
-                                </div>
-                            </form>
+        <font face='Courier' color='#00FFFF'>&nbsp;&nbsp;&nbsp;
+            <font face='Courier' color='red'>*</font> 
+                2+ year of professional experience as MERN Stack web developer as freelancer.
+        </font><br>
+        <font face='Courier' color='#00FFFF'>&nbsp;&nbsp;&nbsp;
+            <font face='Courier' color='red'>*</font>
+                Developed more than enough Web Applications and a chat application from scratch to Production including fron end, backe end, production and maintenance using MERN stack web devlopment technologies.
+        </font><br>
+        <font face='Courier' color='#00FFFF'>&nbsp;&nbsp;&nbsp;
+            <font face='Courier' color='red'>*</font> 
+                Experience on up to date advance web development technologies ReactJS, React Native, NodeJS, ExpressJS, MongoDB, NPM, GIT, Heroku, Socket.io, ES6, Bootstrap, CSS3, HTML5, Ajax, MVC, JSON etc.
+        </font><br>
+        <font face='Courier' color='#00FFFF'>&nbsp;&nbsp;&nbsp;
+            <font face='Courier' color='red'>*</font> 
+                Extensive knowledge on full Application development life cycle, MVC, Modular structure wirin and work flow from scratch to production.
+        </font>
 
 
+        <br><br>
+        <font face='Courier' color='#00FFFF'>
+        My expertise and interest lies in JavaScript technologies (Node.js, React.js, Express.js, Electron.js, Angular.js) and my server side skills revolve around Node and PHP. Sometimes I enjoy playing with desktop/mobile development using JavaScript. I'm mostly focused on open source technologies and MERN Stack. I love to experiment with new stuff, enjoy following new trending technologies on GitHub. 
+    </font>
+        
+        <font face='Courier' color='#00FFFF'>When not buried in my text editor, I enjoy watching movies, reading programming books and playing basketball.
+        </font><br><br><br>`;
 
-                        </div>
+        msg[4] = `<font face='Courier' color='#FFFFFF'>
+            <center>Computers are good <font face='Courier' color='#FFFFFF'><br>
+                at following instructions,</font>
+                <font face='Courier' color='#FFFFFF'><br>
+                    but not</font>
+                    <font face='Courier' color='#FFFFFF'><br>
+                        at reading your mind.</font><br><br>
+                        
+                        <font face='Courier' color='#FFFFFF'>~ Donald Knuth</center>
+                        </font><br>`;
 
-                    </div>
-                </div>
-            </div>
-        </div>
+        msg[5] = "<font face='Courier' color='#3D8B37' new size='5'><center>Social media:<br></center><br>";
+        msg[6] = `<font face='Courier' color='#3D8B37' new size='4'>
+            <center>
+                <a style="text-decoration:none;" href="https://www.linkedin.com/in/mario-rozic/" target="_blank">LinkedIn</a> / 
+                <a style="text-decoration:none;" href="https://github.com/MarioRozic" target="_blank">GitHub</a> / 
+                <a style="text-decoration:none;" href="https://stackoverflow.com/users/5243162/mario-rozic" target="_blank">Stack Overflow</a> / 
+                <a style="text-decoration:none;" href="https://www.instagram.com/_mariorozic_/" target="_blank">Instagram</a> <br></center><br>`;
 
-        <div class="section fp-auto-height" data-anchor="6thPage">
-            <div class="intro footer">
-                <div class="row">
-                    <div class="mySocial">
+        text1 = ""; //the same as text2, only the last character is highlighted
+        text2 = ""; //current string, which will be written
+        count = 0; //char index in string text
+        count2 = 0; //number of strings
+        text = msg[0].split(""); //text - string written
 
-                        <a href="https://www.linkedin.com/in/mario-rozic/" class="col-lg-3 col-xs-3 btn-linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                        <a href="https://github.com/MarioRozic" class="col-lg-3 col-xs-3 btn-github">
-                        <i class="fa fa-github"></i>
-                    </a>
-                        <a href="https://stackoverflow.com/users/5243162/mario-rozic" class="col-lg-3 col-xs-3 btn-google">
-                        <i class="fa fa-google"></i>
-                    </a>
-                        <a href="https://www.instagram.com/_mariorozic_/" class="col-lg-3 col-xs-3 btn-instagram">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        function writetext() { //show strings above on screen
+            text1 = text2 + "<font color='#FFFFFF'>" + text[count] + "</font>";
+            text2 += text[count];
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-        crossorigin="anonymous"></script>
-    <script src="js/jquery.fullPage.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            $('#wrapper').fullpage({
-                menu: '#menu',
-                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
-                responsiveWidth: 1100
-            });
-        });
-    </script>
+            log(text1)
+            // log(text2)
+
+
+            document.all["nothing"].innerHTML = text1; //where to write
+
+            if (count < text.length - 1) {
+                count++;
+
+                setTimeout('writetext()', speed);
+            }
+
+            else { //if this string is written, get the new string
+                count = 0;
+                if (count2 != 15) { //write 15 strings
+                    count2++;
+                    text2 += ""; //a new line
+                    text = eval('msg[' + count2 + '].split("")'); //get the new string to text
+                    setTimeout('writetext()', speed);
+                }
+            }
+        }
+    </SCRIPT>
+
+
+    <SCRIPT LANGUAGE="JavaScript">
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+
+        //if IE4+
+        document.onselectstart = new Function("return false")
+
+        document.oncontextmenu = new Function("return false")
+
+        //if NS6
+        if (window.sidebar) {
+
+            document.onmousedown = disableselect
+
+            document.onclick = reEnable
+        }
+    </SCRIPT>
+
 
 </body>
-
-</html>
