@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mario Rozic — Frontend Engineer</title>
+  <meta name="description" content="Mario Rozic — frontend-focused software engineer. 8+ years of production React and TypeScript across betting, energy, healthcare and e-commerce.">
+  <meta name="theme-color" content="#05060a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2305060a'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%2300ff9c' font-family='monospace' font-weight='700'>MR</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <div class="boot" id="boot" aria-hidden="true">
+    <pre id="bootText"></pre>
+  </div>
+
+  <header class="nav">
+    <a href="#top" class="logo" data-magnetic>MR<span>_</span></a>
+    <nav>
+      <a href="#about" data-scramble-hover>about</a>
+      <a href="#experience" data-scramble-hover>experience</a>
+      <a href="#stack" data-scramble-hover>stack</a>
+      <a href="#projects" data-scramble-hover>projects</a>
+      <a href="#contact" class="nav-cta" data-magnetic>contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="dot"></span> available for new opportunities · Mostar / Zagreb</p>
+        <h1 class="glitch" data-text="MARIO ROZIC" id="heroName">MARIO ROZIC</h1>
+        <p class="role">
+          <span class="prompt">&gt;</span>
+          <span id="typed"></span><span class="caret"></span>
+        </p>
+        <p class="lead">
+          Frontend engineer with 8+ years shipping production React &amp; TypeScript —
+          real-time betting platforms, oil &amp; energy dashboards, healthcare, e-commerce.
+          Now building with AI in the loop.
+        </p>
+        <div class="cta">
+          <a href="#projects" class="btn primary" data-magnetic><span>enter the build</span></a>
+          <a href="#contact" class="btn" data-magnetic><span>get in touch</span></a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span>scroll</span><i></i></div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats reveal-group">
+      <div class="stat"><b data-count="8" data-suffix="+">0</b><span>years in production</span></div>
+      <div class="stat"><b data-count="5">0</b><span>companies shipped for</span></div>
+      <div class="stat"><b data-count="4">0</b><span>industries</span></div>
+      <div class="stat"><b data-count="3">0</b><span>state libraries in production</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="title" data-scramble><span class="idx">01</span> whoami</h2>
+      <div class="about-grid">
+        <div class="term reveal">
+          <div class="term-bar"><i></i><i></i><i></i><span>mario@portfolio:~</span></div>
+          <pre class="term-body"><span class="c">$</span> whoami
+<span class="g">mario rozic</span> — frontend-focused software engineer
+
+<span class="c">$</span> cat focus.txt
+<span class="g">▸</span> complex dashboards &amp; data-heavy UIs
+<span class="g">▸</span> real-time features (sockets, live data)
+<span class="g">▸</span> scalable state: Zustand · Jotai · Redux
+<span class="g">▸</span> testing culture: Vitest · Storybook · Jest
+<span class="g">▸</span> AI-assisted engineering + AI product features
+
+<span class="c">$</span> cat now.txt
+<span class="g">▸</span> Web Developer @ Diplomat Tech
+<span class="g">▸</span> modernising a legacy JS betting platform → TypeScript
+
+<span class="c">$</span> ls hobbies/
+basketball/  gym/  snowboarding/  travel/  books/  board-games/  seinfeld/
+<span class="c">$</span> <span class="caret"></span></pre>
+        </div>
+        <div class="about-copy reveal">
+          <p>I like the hard end of the frontend: interfaces where data changes every second, where a bug costs real money, and where the codebase has years of history behind it.</p>
+          <p>I introduced testing to a codebase that had none, led teams of juniors, talked directly to customers about technology choices, and shipped a live player-betting feature solo with almost no margin for error.</p>
+          <p>I started on the backend — Go microservices, CockroachDB, sockets — so I still think about the full path a pixel takes to the screen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="title" data-scramble><span class="idx">02</span> experience</h2>
+      <div class="timeline">
+        <div class="line"><i></i></div>
+
+        <article class="job reveal">
+          <div class="when">Jun 2025 — now</div>
+          <div class="card tilt">
+            <h3>Web Developer <em>@ Diplomat Tech</em></h3>
+            <p class="meta">Mostar · on-site</p>
+            <ul>
+              <li>High-traffic betting platform: live betting site plus full back office.</li>
+              <li>Introduced Vitest to a previously untested codebase.</li>
+              <li>Shipped a complex live player betting feature solo, real-time data, minimal margin for error.</li>
+              <li>Zustand and custom logging; refactoring legacy JS toward TypeScript.</li>
+            </ul>
+            <p class="tags"><span>React</span><span>Zustand</span><span>Vitest</span><span>TypeScript</span></p>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="when">Jul 2023 — Apr 2025</div>
+          <div class="card tilt">
+            <h3>Web Developer <em>@ Three60 Energy</em></h3>
+            <p class="meta">Remote</p>
+            <ul>
+              <li>Dashboards for tracking wellbores, oil transport and renewable energy.</li>
+              <li>Every component isolated and tested in Storybook; heavy MUI Joy + ECharts.</li>
+              <li>Moon monorepo, Jotai + TanStack for tables and queries.</li>
+              <li>PostHog analytics, OpenAI chat; backend with Node, Elysia, Drizzle. Direct customer contact.</li>
+            </ul>
+            <p class="tags"><span>React</span><span>Storybook</span><span>Jotai</span><span>ECharts</span><span>Elysia</span><span>Drizzle</span></p>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="when">Jul 2021 — Jun 2023</div>
+          <div class="card tilt">
+            <h3>Web Developer <em>@ Q agency</em></h3>
+            <p class="meta">Remote</p>
+            <ul>
+              <li>Led the frontend team on a BYOD virtual assistant with intricate calendar/schedule features.</li>
+              <li>Managed two junior developers on a UI/UX-heavy project.</li>
+              <li>Maintained a legacy healthcare app; helped backend with Node, GraphQL, S3.</li>
+              <li>Built the project skeleton used to start new frontend projects.</li>
+            </ul>
+            <p class="tags"><span>React</span><span>React Query</span><span>TypeScript</span><span>GraphQL</span><span>AWS S3</span></p>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="when">Jan 2019 — Jul 2021</div>
+          <div class="card tilt">
+            <h3>Web Developer <em>@ BlueHat</em></h3>
+            <p class="meta">Remote · Doha, Qatar</p>
+            <ul>
+              <li>Led a business-to-supplier transaction platform.</li>
+              <li>Built the supplier admin panel and a custom e-commerce shop.</li>
+              <li>Set up the GitHub Actions deployment pipeline; kept a long-lived legacy system stable.</li>
+            </ul>
+            <p class="tags"><span>React</span><span>React Query</span><span>Socket.io</span><span>GitHub Actions</span><span>Google Maps</span></p>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="when">Aug 2018 — Dec 2019</div>
+          <div class="card tilt">
+            <h3>Full Stack Developer <em>@ Spark</em></h3>
+            <p class="meta">Mostar · on-site</p>
+            <ul>
+              <li>CS:GO betting solution: split the backend into real-time communicating services.</li>
+              <li>Thread management and query optimisation for rapid bet calculation.</li>
+            </ul>
+            <p class="tags"><span>Golang</span><span>Docker</span><span>CockroachDB</span><span>React Native</span><span>Socket.io</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <h2 class="title" data-scramble><span class="idx">03</span> stack</h2>
+      <div class="marquee" aria-hidden="true">
+        <div class="track">
+          <span>REACT</span><span>TYPESCRIPT</span><span>NEXT.JS</span><span>NODE.JS</span><span>ZUSTAND</span><span>JOTAI</span><span>REDUX</span><span>GRAPHQL</span><span>STORYBOOK</span><span>VITEST</span>
+          <span>REACT</span><span>TYPESCRIPT</span><span>NEXT.JS</span><span>NODE.JS</span><span>ZUSTAND</span><span>JOTAI</span><span>REDUX</span><span>GRAPHQL</span><span>STORYBOOK</span><span>VITEST</span>
+        </div>
+      </div>
+      <div class="stack-grid reveal-group">
+        <div class="stack-card tilt"><h4>Frontend</h4><p>React · Next.js · TypeScript · Zustand · Jotai · Redux · TanStack Query · MUI Joy · ECharts · Styled Components</p></div>
+        <div class="stack-card tilt"><h4>Backend</h4><p>Node.js · Express · Elysia · GraphQL · Prisma · Drizzle · MySQL · Golang · CockroachDB · Socket.io</p></div>
+        <div class="stack-card tilt"><h4>Quality &amp; Delivery</h4><p>Vitest · Jest · Storybook · GitHub Actions · GitLab CI · Jenkins · Docker · Moon monorepos</p></div>
+        <div class="stack-card tilt"><h4>AI</h4><p>OpenAI integration in production · AI-assisted engineering workflows · Claude Code</p></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="title" data-scramble><span class="idx">04</span> projects</h2>
+      <div class="projects reveal-group">
+        <a class="project tilt" href="#" data-repo="DJapp">
+          <span class="num">01</span>
+          <h3>DJapp</h3>
+          <p>A crowd requests songs from a DJ at a live gig. Share a six-character code, no accounts, boost a request up the queue. The DJ accepts, rejects or marks it played.</p>
+          <p class="tags"><span>pnpm monorepo</span><span>React</span><span>Node API</span><span>Storybook</span></p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="project tilt" href="#" data-repo="github-pulse">
+          <span class="num">02</span>
+          <h3>GitHub Pulse</h3>
+          <p>Turns a GitHub user's year into a readable report: contribution heatmap, streaks, weekday rhythm, byte-weighted language mix. One GraphQL round trip, server-rendered.</p>
+          <p class="tags"><span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>GitHub GraphQL</span></p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="project tilt" href="#" data-repo="PathFinder">
+          <span class="num">03</span>
+          <h3>PathFinder</h3>
+          <p>Path-finding in TypeScript with both a CLI and a web interface.</p>
+          <p class="tags"><span>TypeScript</span><span>Jest</span><span>CLI + Web</span></p>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="project tilt" href="#" data-repo="telescope">
+          <span class="num">04</span>
+          <h3>Telescope</h3>
+          <p>A component-driven React playground: Vite, Storybook, Tailwind, React Query and Jotai.</p>
+          <p class="tags"><span>Vite</span><span>React</span><span>Storybook</span><span>Jotai</span></p>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="title" data-scramble><span class="idx">05</span> contact</h2>
+      <p class="big reveal">Have something hard to build?</p>
+      <a class="mail glitch" data-text="rozic.marioo@gmail.com" href="mailto:rozic.marioo@gmail.com" data-magnetic>rozic.marioo@gmail.com</a>
+      <div class="socials reveal">
+        <a href="#" data-social="github" data-scramble-hover>github</a>
+        <a href="#" data-social="linkedin" data-scramble-hover>linkedin</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Mario Rozic</span>
+    <span class="dim">built with vanilla JS + GSAP · wake up, neo…</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
