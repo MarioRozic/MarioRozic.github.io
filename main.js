@@ -238,6 +238,7 @@
   addEventListener('load', async () => {
     if (!window.gsap) { bootEl.remove(); document.body.classList.remove('booting'); return; } // CDN blocked: static page still works
     await bootSequence();
+    dispatchEvent(new Event('portfolio:ready'));
     scrollAnims();
     interactions();
     heroIntro();
