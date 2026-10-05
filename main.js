@@ -8,9 +8,13 @@
 
   /* ---------- Config: fill these in ---------- */
   const LINKS = {
-    github: '#',    // TODO: https://github.com/<you>
-    linkedin: '#',  // TODO: https://linkedin.com/in/<you>
-    repos: {},      // e.g. { DJapp: 'https://github.com/<you>/DJapp' }
+    github: 'https://github.com/MarioRozic',
+    linkedin: 'https://www.linkedin.com/in/mario-rozic/',
+    repos: {
+      DJapp: 'https://github.com/MarioRozic/DJapp',
+      PathFinder: 'https://github.com/MarioRozic/PathFinder',
+      telescope: 'https://github.com/MarioRozic/telescope',
+    },  // github-pulse has no remote yet, so its card stays unlinked
   };
 
   document.getElementById('year').textContent = new Date().getFullYear();
