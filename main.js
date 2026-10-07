@@ -11,10 +11,10 @@
     github: 'https://github.com/MarioRozic',
     linkedin: 'https://www.linkedin.com/in/mario-rozic/',
     repos: {
-      DJapp: 'https://github.com/MarioRozic/DJapp',
+      dota2picker: 'https://github.com/MarioRozic/dota2picker',
       PathFinder: 'https://github.com/MarioRozic/PathFinder',
       telescope: 'https://github.com/MarioRozic/telescope',
-    },  // github-pulse has no remote yet, so its card stays unlinked
+    },
   };
 
   document.getElementById('year').textContent = new Date().getFullYear();
